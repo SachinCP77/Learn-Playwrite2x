@@ -1,0 +1,10 @@
+import { test, expect } from '@playwright/test';
+
+test('Verify title', async ({ page }) => {
+    await page.goto('https://app.vwo.com/');
+    await expect(page).toHaveTitle('Login - Wingify');
+    const logoimg = page.locator('#vwo-logo-login');
+    await expect(logoimg).toBeVisible;
+
+
+});
