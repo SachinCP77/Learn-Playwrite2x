@@ -1,3 +1,4 @@
+//run sessionstore.spec.ts file before executing
 import { test, expect } from '@playwright/test';
 
 test.use({ storageState: "./user-session.json" });
