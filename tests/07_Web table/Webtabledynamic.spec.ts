@@ -1,4 +1,4 @@
-import { test, expect } from 'allure-playwright';
+import { test, expect } from '@playwright/test';
 
 test('Basic how to verify multiple elements', async ({ page }) => {
 
